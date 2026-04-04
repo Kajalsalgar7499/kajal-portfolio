@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Kajal Salgar | Full Stack Python Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<link rel="stylesheet" href="./index.css">
+</head>
+<body>
+
+<div id="cursor"></div>
+<div id="cursor-dot"></div>
+<div class="scroll-line" id="scrollLine"></div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">Kajal Dattatray Salgar<span style="color:var(--muted)">_</span></div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-left fade-up">
+    <div class="hero-tag">Available for Opportunities</div>
+    <h1 class="hero-name">
+      <div class="glitch" data-text="Kajal">Kajal Dattatray Salgar</div>
+
+    </h1>
+    <p class="hero-role">// Full Stack Python Developer</p>
+    <p class="hero-desc">
+      Building scalable web solutions with <strong style="color:var(--accent)">Python, Django, Flask</strong> 
+      and <strong style="color:var(--accent2)">React JS</strong>. 
+      Passionate about crafting clean backends and intuitive frontends that solve real problems.
+    </p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn-primary">View Projects</a>
+      <a href="#contact" class="btn-outline">Get In Touch</a>
+      <a href="./Resume_kajal_salgar.pdf" class="btn-outline" target="_blank">Download Resume</a>
+    </div>
+  </div>
+
+  <div class="hero-right fade-up">
+    <div class="photo-wrap" id="photoWrap" onclick="togglePhoto()" title="Click to toggle photo mode!">
+      <div class="photo-inner">
+        <!-- FORMAL state -->
+        <div class="photo-formal photo-placeholder">
+            <img src="./formalpic.jpeg" class="img-responsive .img-thumbnail about-grid h-connector-line " height="800px" alt="">
+          <i class="fa fa-user-circle"></i>
+          <span>Kajal Salgar</span>
+          <span style="font-size:0.3rem;opacity:0.6">Click to toggle!</span>
+        </div>
+        <!-- INFORMAL state -->
+        <div class="photo-informal photo-placeholder" style="background:linear-gradient(135deg,#00ffe010,#ff4fd810)">
+            <img src="./casualpic.jpeg" class="img-responsive .img-thumbnail about-grid h-connector-line" height="800px"  alt="">
+          <i class="fa fa-smile" style="color:var(--accent2)"></i>
+          <span style="color:var(--accent2)">Kajal Salgar</span>
+          <span style="font-size:0.3rem;color:var(--muted)">Casual Mode 🎉</span>
+        </div>
+      </div>
+    </div>
+    <div class="photo-hint"><i class="fa fa-hand-pointer"></i> Click photo to toggle formal ↔ informal</div>
+    <div class="photo-label" id="photoLabel">FORMAL MODE</div>
+
+    <div class="hero-stats">
+      <div class="stat-card">
+        <div class="stat-num">2+</div>
+        <div class="stat-label">Projects Built</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">3+</div>
+        <div class="stat-label">Months Intern</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">5+</div>
+        <div class="stat-label">Tech Skills</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="sec-header fade-up">
+    <div class="sec-tag">01 / About Me</div>
+    <h2 class="sec-title">Hello, World! 👋</h2>
+    <div class="sec-line"></div>
+  </div>
+
+  <div class="about-grid">
+    <div class="about-text fade-up">
+      <p>
+        I'm <strong>Kajal Salgar</strong>, a passionate <strong>Full Stack Python Developer</strong> 
+        from Pune, Maharashtra. I recently completed my <strong>B.Tech in Computer Science Engineering</strong> 
+        from BMIT Solapur (2025) and am currently enrolled in the 
+        <strong>Full Stack Python Developer Program</strong> at Fortune Cloud Technologies, Shivajinagar, Pune.
+      </p>
+      <p>
+        My journey in tech includes hands-on internship experience at <strong>Cravita Technologies</strong>, 
+        where I worked on live production projects using Django, Flask, and React JS. I enjoy building 
+        end-to-end solutions — from architecting REST APIs to crafting responsive UIs.
+      </p>
+      <p>
+        I have a growing interest in <strong>Artificial Intelligence</strong> and love integrating AI 
+        concepts into real-world applications. Always eager to learn, collaborate, and build.
+      </p>
+      <div class="skills-chips">
+        <span class="chip">Python</span>
+        <span class="chip">Django</span>
+        <span class="chip">Flask</span>
+        <span class="chip">React JS</span>
+        <span class="chip">SQL</span>
+        <span class="chip">Docker</span>
+        <span class="chip">REST APIs</span>
+        <span class="chip">Git/GitHub</span>
+        <span class="chip">AI</span>
+        <span class="chip">HTML5 / CSS3</span>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-icon"><i class="fa fa-certificate"></i></div>
+        <div class="cert-text">
+          <div class="cert-title">Introduction to Artificial Intelligence</div>
+          <div class="cert-sub">Certified – AI Fundamentals</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NOTEPAD -->
+    <div class="fade-up">
+      <div class="notepad">
+        <div class="notepad-header">
+          <div class="notepad-dot nd-red"></div>
+          <div class="notepad-dot nd-yel"></div>
+          <div class="notepad-dot nd-grn"></div>
+          <span class="notepad-fname">kajal_salgar.py</span>
+        </div>
+        <div class="notepad-body">
+          <div class="code-line"><span class="line-no">1</span><span class="code-kw">class</span> <span class="code-cls">KajalSalgar</span>:</div>
+          <div class="code-line"><span class="line-no">2</span></div>
+          <div class="code-line"><span class="line-no">3</span><span class="code-indent"></span><span class="code-fn">def</span> <span class="code-fn">__init__</span>(self):</div>
+          <div class="code-line"><span class="line-no">4</span><span class="code-indent"></span><span class="code-indent"></span>self.name = <span class="code-str">"Kajal Salgar"</span></div>
+          <div class="code-line"><span class="line-no">5</span><span class="code-indent"></span><span class="code-indent"></span>self.role = <span class="code-str">"Full Stack Python Dev"</span></div>
+          <div class="code-line"><span class="line-no">6</span><span class="code-indent"></span><span class="code-indent"></span>self.location = <span class="code-str">"Pune, Maharashtra 🇮🇳"</span></div>
+          <div class="code-line"><span class="line-no">7</span><span class="code-indent"></span><span class="code-indent"></span>self.education = <span class="code-str">"B.Tech CSE, BMIT 2025"</span></div>
+          <div class="code-line"><span class="line-no">8</span><span class="code-indent"></span><span class="code-indent"></span>self.skills = [</div>
+          <div class="code-line"><span class="line-no">9</span><span class="code-indent"></span><span class="code-indent"></span><span class="code-indent"></span><span class="code-str">"Python"</span>, <span class="code-str">"Django"</span>, <span class="code-str">"Flask"</span>,</div>
+          <div class="code-line"><span class="line-no">10</span><span class="code-indent"></span><span class="code-indent"></span><span class="code-indent"></span><span class="code-str">"React JS"</span>, <span class="code-str">"SQL"</span>, <span class="code-str">"Docker"</span></div>
+          <div class="code-line"><span class="line-no">11</span><span class="code-indent"></span><span class="code-indent"></span>]</div>
+          <div class="code-line"><span class="line-no">12</span></div>
+          <div class="code-line"><span class="line-no">13</span><span class="code-indent"></span><span class="code-fn">def</span> <span class="code-fn">greet</span>(self):</div>
+          <div class="code-line"><span class="line-no">14</span><span class="code-indent"></span><span class="code-indent"></span><span class="code-kw">return</span> (</div>
+          <div class="code-line"><span class="line-no">15</span><span class="code-indent"></span><span class="code-indent"></span><span class="code-indent"></span><span class="code-str">f"Hey! I'm {self.name} 👩‍💻"</span></div>
+          <div class="code-line"><span class="line-no">16</span><span class="code-indent"></span><span class="code-indent"></span><span class="code-indent"></span><span class="code-str">f" — building the web, one API at a time."</span></div>
+          <div class="code-line"><span class="line-no">17</span><span class="code-indent"></span><span class="code-indent"></span>)</div>
+          <div class="code-line"><span class="line-no">18</span></div>
+          <div class="code-line"><span class="line-no">19</span><span class="code-cmt"># Let's build something amazing 🚀</span></div>
+          <div class="code-line"><span class="line-no">20</span>kajal = <span class="code-cls">KajalSalgar</span>()</div>
+          <div class="code-line"><span class="line-no">21</span><span class="code-fn">print</span>(kajal.greet())<span class="cursor-blink"></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="sec-header fade-up">
+    <div class="sec-tag">02 / Projects</div>
+    <h2 class="sec-title">What I've Built</h2>
+    <div class="sec-line"></div>
+  </div>
+
+  <div class="projects-grid">
+    <div class="proj-card fade-up">
+      <span class="proj-num">01</span>
+      <div class="proj-icon">🌐</div>
+      <h3 class="proj-title">Portfolio Website</h3>
+      <p class="proj-desc">
+        A personal developer portfolio showcasing projects, skills, and experience. 
+        Built with a modern tech stack featuring smooth animations, responsive design, 
+        and an interactive UI that leaves a lasting impression.
+      </p>
+      <div class="proj-tags">
+        <span class="ptag">HTML5</span>
+        <span class="ptag">CSS3</span>
+        <span class="ptag">JavaScript</span>
+        <span class="ptag">React JS</span>
+      </div>
+    </div>
+
+    <div class="proj-card fade-up" style="transition-delay:0.1s">
+      <span class="proj-num">02</span>
+      <div class="proj-icon">🛍️</div>
+      <h3 class="proj-title">NAARI – E-Commerce Website</h3>
+      <p class="proj-desc">
+        A full-featured e-commerce platform tailored for women's fashion. 
+        Includes product listing, cart management, user authentication, 
+        order tracking, and a Django REST API backend with SQL database.
+      </p>
+      <div class="proj-tags">
+        <span class="ptag">Python</span>
+        <span class="ptag">Django</span>
+        <span class="ptag">React JS</span>
+        <span class="ptag">SQL</span>
+        <span class="ptag">REST API</span>
+      </div>
+    </div>
+
+    <div class="proj-card fade-up" style="transition-delay:0.2s">
+      <span class="proj-num">03</span>
+      <div class="proj-icon">🔧</div>
+      <h3 class="proj-title">Full Stack Web Application</h3>
+      <p class="proj-desc">
+        A complete CRUD web application with Django REST API backend and React JS frontend. 
+        Features user authentication, relational database management, and efficient data retrieval 
+        with optimized SQL schemas.
+      </p>
+      <div class="proj-tags">
+        <span class="ptag">Django</span>
+        <span class="ptag">React JS</span>
+        <span class="ptag">SQL</span>
+        <span class="ptag">REST API</span>
+      </div>
+    </div>
+
+    <div class="proj-card fade-up" style="transition-delay:0.3s">
+      <span class="proj-num">04</span>
+      <div class="proj-icon">📱</div>
+      <h3 class="proj-title">Responsive Web Interface</h3>
+      <p class="proj-desc">
+        A modern, responsive front-end built with React JS using reusable component architecture. 
+        Dynamic content rendering, interactive UI features, and mobile-first design 
+        with clean JavaScript logic.
+      </p>
+      <div class="proj-tags">
+        <span class="ptag">React JS</span>
+        <span class="ptag">HTML5</span>
+        <span class="ptag">CSS3</span>
+        <span class="ptag">JavaScript</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="sec-header fade-up">
+    <div class="sec-tag">03 / Experience</div>
+    <h2 class="sec-title">My Journey</h2>
+    <div class="sec-line"></div>
+  </div>
+
+  <div class="exp-timeline">
+    <div class="exp-item fade-up">
+      <div class="exp-dot"></div>
+      <div class="exp-period">Jan 2026 – Present · Current</div>
+      <h3 class="exp-role">Jr. Software Engineer Intern</h3>
+      <div class="exp-company">Cravita Technologies India Pvt. Ltd. · Shivajinagar, Pune</div>
+      <ul class="exp-points">
+        <li>Contributing to full-stack web development projects using Python, Django/Flask, and React JS.</li>
+        <li>Developing and maintaining RESTful backend services and dynamic front-end interfaces.</li>
+        <li>Collaborating with the development team using Git, GitHub, and Jira for project management.</li>
+        <li>Participating in code reviews, debugging, and deployment of containerized apps using Docker.</li>
+      </ul>
+    </div>
+
+    <div class="exp-item fade-up">
+      <div class="exp-dot" style="border-color:var(--accent2);box-shadow:0 0 12px var(--accent2)"></div>
+      <div class="exp-period" style="color:var(--accent2)">2026 · Current Program</div>
+      <h3 class="exp-role">Full Stack Python Developer Program</h3>
+      <div class="exp-company" style="color:var(--accent)">Fortune Cloud Technologies · Shivajinagar, Pune</div>
+      <ul class="exp-points">
+        <li>Enrolled in an intensive Full Stack Python Developer training program.</li>
+        <li>Building real-world projects with industry-standard tools and best practices.</li>
+        <li>Deepening expertise in Django, Flask, React JS, SQL, and deployment workflows.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION TREE -->
+<section id="education">
+  <div class="sec-header fade-up">
+    <div class="sec-tag">04 / Education</div>
+    <h2 class="sec-title">Academic Roots</h2>
+    <div class="sec-line"></div>
+  </div>
+
+  <!-- Tree structure -->
+  <div class="edu-tree fade-up" style="max-width:900px;margin:0 auto;">
+
+    <!-- Root / trunk top node -->
+    <div class="tree-root" style="align-items:center;width:100%;">
+
+      <!-- Current: Fortune Cloud -->
+      <div class="tree-node current" style="border-color:var(--accent2);background:#ff4fd808;">
+        <div class="tree-node-year" style="color:var(--accent2)">2026 · Current</div>
+        <div class="tree-node-title">Full Stack Python Developer </div>
+        <div class="tree-node-sub">Fortune Cloud Technologies, Shivajinagar, Pune</div>
+      </div>
+
+      <div style="width:2px;height:48px;background:linear-gradient(180deg,var(--accent2),var(--accent));margin:0 auto;"></div>
+
+      <!-- B.Tech -->
+      <div class="tree-node root-node">
+        <div class="tree-node-year">Sep 2021 – Jun 2025</div>
+        <div class="tree-node-title">B.Tech – Computer Science Engineering</div>
+        <div class="tree-node-sub">BMIT College (Brahmdevdada Mane Institute of Technology), Solapur University</div>
+      </div>
+
+      <div style="width:2px;height:48px;background:linear-gradient(180deg,var(--accent),var(--accent2));margin:0 auto;"></div>
+
+      <!-- Horizontal branch line container -->
+      <div style="position:relative;width:600px;max-width:100%;">
+        <!-- Horizontal line -->
+        <div style="position:absolute;top:0;left:50px;right:50px;height:2px;background:linear-gradient(90deg,var(--accent2),var(--accent),var(--accent2));"></div>
+        <!-- Two branches -->
+        <div style="display:flex;justify-content:space-between;width:100%;">
+          <!-- Left: HSC -->
+          <div style="display:flex;flex-direction:column;align-items:center;padding-top:0;">
+            <div style="width:2px;height:48px;background:linear-gradient(180deg,var(--accent2),var(--accent));"></div>
+            <div class="tree-node" style="min-width:220px;">
+              <div class="tree-node-year">2021</div>
+              <div class="tree-node-title">HSC – PCM  with 87.33%</div>
+              <div class="tree-node-sub">English School Jr. College, Mangalwedha, Solapur</div>
+            </div>
+          </div>
+          <!-- Right: SSC -->
+          <div style="display:flex;flex-direction:column;align-items:center;padding-top:0;">
+            <div style="width:2px;height:48px;background:linear-gradient(180deg,var(--accent2),var(--accent));"></div>
+            <div class="tree-node" style="min-width:220px;">
+              <div class="tree-node-year">2019</div>
+              <div class="tree-node-title">SSC with 82.80%</div>
+              <div class="tree-node-sub">Shri Siddheshwar Vidya Mandir, Machnur, Solapur</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="sec-header fade-up">
+    <div class="sec-tag">05 / Skills</div>
+    <h2 class="sec-title">Tech Arsenal</h2>
+    <div class="sec-line"></div>
+  </div>
+
+  <div class="skills-grid">
+    <div class="skill-group fade-up">
+      <div class="skill-group-title">Languages</div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-top"><span class="skill-bar-name">Python</span><span class="skill-bar-pct">88%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="88"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-top"><span class="skill-bar-name">JavaScript</span><span class="skill-bar-pct">78%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="78"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-top"><span class="skill-bar-name">SQL</span><span class="skill-bar-pct">80%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="80"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-top"><span class="skill-bar-name">HTML5 / CSS3</span><span class="skill-bar-pct">85%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="85"></div></div>
+      </div>
+    </div>
+
+    <div class="skill-group fade-up" style="transition-delay:0.1s">
+      <div class="skill-group-title">Frameworks</div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-top"><span class="skill-bar-name">Django</span><span class="skill-bar-pct">82%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="82"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-top"><span class="skill-bar-name">Flask</span><span class="skill-bar-pct">78%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="78"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-top"><span class="skill-bar-name">React JS</span><span class="skill-bar-pct">75%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="75"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-top"><span class="skill-bar-name">REST APIs</span><span class="skill-bar-pct">84%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="84"></div></div>
+      </div>
+    </div>
+
+    <div class="skill-group fade-up" style="transition-delay:0.2s">
+      <div class="skill-group-title">Tools & Platforms</div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-top"><span class="skill-bar-name">Git / GitHub</span><span class="skill-bar-pct">80%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="80"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-top"><span class="skill-bar-name">Docker</span><span class="skill-bar-pct">65%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="65"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-top"><span class="skill-bar-name">Jira</span><span class="skill-bar-pct">70%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="70"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-top"><span class="skill-bar-name">AI / ML Basics</span><span class="skill-bar-pct">60%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="60"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="sec-header fade-up">
+    <div class="sec-tag">06 / Contact</div>
+    <h2 class="sec-title">Let's Connect</h2>
+    <div class="sec-line"></div>
+  </div>
+
+  <div class="contact-grid">
+    <div class="fade-up">
+      <div class="contact-item">
+        <div class="contact-icon"><i class="fa fa-envelope"></i></div>
+        <div>
+          <div class="contact-label">Email</div>
+          <div class="contact-val"><a href="mailto:kajalsalgar37@gmail.com">kajalsalgar37@gmail.com</a></div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+        <div>
+          <div class="contact-label">LinkedIn</div>
+          <div class="contact-val"><a href="https://linkedin.com/in/kajal-salgarb7419b251" target="_blank">linkedin.com/in/kajal-salgar</a></div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon"><i class="fa fa-map-marker-alt"></i></div>
+        <div>
+          <div class="contact-label">Location</div>
+          <div class="contact-val">Pune, Maharashtra, India</div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon"><i class="fa fa-briefcase"></i></div>
+        <div>
+          <div class="contact-label">Status</div>
+          <div class="contact-val" style="color:var(--accent)">Open to Opportunities ✓</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form fade-up">
+      <div class="form-group">
+        <label>Your Name</label>
+        <input type="text" placeholder="John Doe" />
+      </div>
+      <div class="form-group">
+        <label>Email Address</label>
+        <input type="email" placeholder="john@example.com" />
+      </div>
+      <div class="form-group">
+        <label>Message</label>
+        <textarea placeholder="Hi Kajal, I'd love to connect about..."></textarea>
+      </div>
+      <button class="btn-primary" style="width:100%;font-size:0.8rem;" onclick="handleSend()">
+        Send Message &nbsp;<i class="fa fa-paper-plane"></i>
+      </button>
+      <p id="form-msg" style="margin-top:12px;font-family:'Space Mono',monospace;font-size:0.72rem;color:var(--accent);display:none;">
+        ✓ Message sent! (Demo mode – please email directly)
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>Designed & Developed by <span>Kajal Salgar</span> · 2025 · Built with 💚 and lots of Python</p>
+  <p style="margin-top:8px;font-size:0.62rem;color:#3d3d5a;">Full Stack Python Developer · Pune, Maharashtra</p>
+</footer>
+<script src="./index.js"></script>
+
+</body>
+</html>
